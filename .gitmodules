@@ -1,0 +1,3 @@
+[submodule "libs/NetCommandConnector"]
+	path = libs/NetCommandConnector
+	url = git@github.com:uullrich/NetCommandConnector.git
