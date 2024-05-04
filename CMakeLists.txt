@@ -18,8 +18,8 @@ if(Boost_FOUND)
     link_directories(${Boost_LIBRARY_DIRS})
 endif()
 
-add_subdirectory(libs/NetCommandClient)
-include_directories(libs/NetCommandClient/include)
+add_subdirectory(libs/NetCommandConnector)
+include_directories(libs/NetCommandConnector/include)
 
 set(PROJECT_SOURCE_DIR "${PROJECT_SOURCE_DIR}/src" )
 

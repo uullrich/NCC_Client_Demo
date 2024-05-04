@@ -8,7 +8,8 @@
 
 int main() {
     auto connectionEstablishedHandler = [](const std::shared_ptr<CommandSender> &commandSender) {
-        printf("Connection established handler called\n");
+        std::cout << "Connection established handler called" << std::endl;
+
         commandSender->get("test");
 
         commandSender->getData("test");
