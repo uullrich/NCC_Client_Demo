@@ -1,2 +1,2 @@
-# NCC_Client_Demo-
+# NCC_Client_Demo
 Client demo implementation of the NetCommandConnector library
