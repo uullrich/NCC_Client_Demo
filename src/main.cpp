@@ -1,3 +1,4 @@
+/*
 #include "../include/CommandConnector.h"
 #include "../include/CommandSender.h"
 #include "../include/ResponseExecutionInterface.h"
@@ -5,8 +6,12 @@
 #include "../include/ResponseHandler.h"
 
 #include <iostream>
+*/
+
+#include "ClientDemo.h"
 
 int main() {
+    /*
     auto connectionEstablishedHandler = [](const std::shared_ptr<CommandSender> &commandSender) {
         std::cout << "Connection established handler called" << std::endl;
 
@@ -52,4 +57,7 @@ int main() {
 
     ResponseHandler responseHandler{execIf};
     CommandConnector cc{"127.0.0.1", 33344, responseHandler, connectionEstablishedHandler};
+     */
+
+    ClientDemo clientDemo{"127.0.0.1", 33344};
 }

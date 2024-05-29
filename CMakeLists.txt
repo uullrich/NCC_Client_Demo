@@ -24,7 +24,9 @@ include_directories(libs/NetCommandConnector/include)
 set(PROJECT_SOURCE_DIR "${PROJECT_SOURCE_DIR}/src" )
 
 message( "SourceDir: ${PROJECT_SOURCE_DIR}" )
-set(SRC_FILES ${PROJECT_SOURCE_DIR}/main.cpp)
+set(SRC_FILES ${PROJECT_SOURCE_DIR}/main.cpp
+              ${PROJECT_SOURCE_DIR}/ClientDemo.cpp
+)
 
 add_executable(NCC_Client_Demo ${SRC_FILES})
 target_link_libraries(NCC_Client_Demo ${Boost_LIBRARIES} NetCommandConnector)
